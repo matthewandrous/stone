@@ -12,7 +12,8 @@
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
     "sass-node": "^4.11.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "moment": "^2.24.0"
   },
   "scripts": {
     "start": "react-scripts start",
