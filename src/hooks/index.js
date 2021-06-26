@@ -14,6 +14,8 @@ export const useTasks = selectedProject => {
         .collection('tasks')
         .where('userId', '==', '1')
 
+        
+
         unsubscribe = selectedProject &&  !collatedTasksExist(selectedProject) ? 
         (unsubscribe = unsubscribe.where('projectId', '==', selectedProject))
         : selectedProject === 'TODAY'
@@ -49,7 +51,7 @@ export const useTasks = selectedProject => {
     return { tasks, archivedTasks };
 };
 
-export const userProjects = () => {
+export const useProjects = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
